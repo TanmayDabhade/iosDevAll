@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110651E22C64E25300BF895A /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110651E12C64E25300BF895A /* BarChartView.swift */; };
+		110651E42C64E44400BF895A /* SleepDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110651E32C64E44400BF895A /* SleepDataPoint.swift */; };
+		11247B982C62330A00CA8198 /* TransctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11247B972C62330A00CA8198 /* TransctionModel.swift */; };
+		11247B9A2C62383300CA8198 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11247B992C62383300CA8198 /* PreviewData.swift */; };
+		11247B9C2C6238ED00CA8198 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11247B9B2C6238ED00CA8198 /* TransactionRow.swift */; };
+		11247B9E2C624B5000CA8198 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11247B9D2C624B5000CA8198 /* TransactionListViewModel.swift */; };
+		11247BA02C62504000CA8198 /* TransactionListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11247B9F2C62504000CA8198 /* TransactionListCard.swift */; };
+		1183411A2C61EA470001F18A /* FinTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118341192C61EA470001F18A /* FinTrackApp.swift */; };
+		1183411C2C61EA470001F18A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183411B2C61EA470001F18A /* ContentView.swift */; };
+		1183411E2C61EA490001F18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1183411D2C61EA490001F18A /* Assets.xcassets */; };
+		118341212C61EA490001F18A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118341202C61EA490001F18A /* Preview Assets.xcassets */; };
+		1183412B2C61EA490001F18A /* FinTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1183412A2C61EA490001F18A /* FinTrackTests.swift */; };
+		118341352C61EA490001F18A /* FinTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118341342C61EA490001F18A /* FinTrackUITests.swift */; };
+		118341372C61EA490001F18A /* FinTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118341362C61EA490001F18A /* FinTrackUITestsLaunchTests.swift */; };
+		118341442C61EB240001F18A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118341432C61EB240001F18A /* Extensions.swift */; };
+		11AADA162C629115005B029C /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AADA152C629115005B029C /* TransactionDetailView.swift */; };
+		11AADA182C62A3EA005B029C /* DebitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AADA172C62A3EA005B029C /* DebitCardView.swift */; };
+		11AADA1A2C62A61F005B029C /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AADA192C62A61F005B029C /* CreditCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		118341272C61EA490001F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1183410E2C61EA470001F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118341152C61EA470001F18A;
+			remoteInfo = FinTrack;
+		};
+		118341312C61EA490001F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1183410E2C61EA470001F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 118341152C61EA470001F18A;
+			remoteInfo = FinTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		110651E12C64E25300BF895A /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		110651E32C64E44400BF895A /* SleepDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataPoint.swift; sourceTree = "<group>"; };
+		11247B972C62330A00CA8198 /* TransctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransctionModel.swift; sourceTree = "<group>"; };
+		11247B992C62383300CA8198 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		11247B9B2C6238ED00CA8198 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		11247B9D2C624B5000CA8198 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		11247B9F2C62504000CA8198 /* TransactionListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListCard.swift; sourceTree = "<group>"; };
+		118341162C61EA470001F18A /* FinTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		118341192C61EA470001F18A /* FinTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinTrackApp.swift; sourceTree = "<group>"; };
+		1183411B2C61EA470001F18A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1183411D2C61EA490001F18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		118341202C61EA490001F18A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		118341262C61EA490001F18A /* FinTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1183412A2C61EA490001F18A /* FinTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinTrackTests.swift; sourceTree = "<group>"; };
+		118341302C61EA490001F18A /* FinTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		118341342C61EA490001F18A /* FinTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinTrackUITests.swift; sourceTree = "<group>"; };
+		118341362C61EA490001F18A /* FinTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		118341432C61EB240001F18A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		11AADA152C629115005B029C /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		11AADA172C62A3EA005B029C /* DebitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardView.swift; sourceTree = "<group>"; };
+		11AADA192C62A61F005B029C /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118341132C61EA470001F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118341232C61EA490001F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1183412D2C61EA490001F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1183410D2C61EA470001F18A = {
+			isa = PBXGroup;
+			children = (
+				118341182C61EA470001F18A /* FinTrack */,
+				118341292C61EA490001F18A /* FinTrackTests */,
+				118341332C61EA490001F18A /* FinTrackUITests */,
+				118341172C61EA470001F18A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		118341172C61EA470001F18A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118341162C61EA470001F18A /* FinTrack.app */,
+				118341262C61EA490001F18A /* FinTrackTests.xctest */,
+				118341302C61EA490001F18A /* FinTrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118341182C61EA470001F18A /* FinTrack */ = {
+			isa = PBXGroup;
+			children = (
+				118341192C61EA470001F18A /* FinTrackApp.swift */,
+				11247B9B2C6238ED00CA8198 /* TransactionRow.swift */,
+				118341432C61EB240001F18A /* Extensions.swift */,
+				11AADA152C629115005B029C /* TransactionDetailView.swift */,
+				11247B9D2C624B5000CA8198 /* TransactionListViewModel.swift */,
+				11247B972C62330A00CA8198 /* TransctionModel.swift */,
+				1183411B2C61EA470001F18A /* ContentView.swift */,
+				110651E12C64E25300BF895A /* BarChartView.swift */,
+				11AADA172C62A3EA005B029C /* DebitCardView.swift */,
+				11AADA192C62A61F005B029C /* CreditCardView.swift */,
+				110651E32C64E44400BF895A /* SleepDataPoint.swift */,
+				11247B9F2C62504000CA8198 /* TransactionListCard.swift */,
+				1183411D2C61EA490001F18A /* Assets.xcassets */,
+				1183411F2C61EA490001F18A /* Preview Content */,
+			);
+			path = FinTrack;
+			sourceTree = "<group>";
+		};
+		1183411F2C61EA490001F18A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				118341202C61EA490001F18A /* Preview Assets.xcassets */,
+				11247B992C62383300CA8198 /* PreviewData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		118341292C61EA490001F18A /* FinTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				1183412A2C61EA490001F18A /* FinTrackTests.swift */,
+			);
+			path = FinTrackTests;
+			sourceTree = "<group>";
+		};
+		118341332C61EA490001F18A /* FinTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				118341342C61EA490001F18A /* FinTrackUITests.swift */,
+				118341362C61EA490001F18A /* FinTrackUITestsLaunchTests.swift */,
+			);
+			path = FinTrackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		118341152C61EA470001F18A /* FinTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1183413A2C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrack" */;
+			buildPhases = (
+				118341122C61EA470001F18A /* Sources */,
+				118341132C61EA470001F18A /* Frameworks */,
+				118341142C61EA470001F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinTrack;
+			productName = FinTrack;
+			productReference = 118341162C61EA470001F18A /* FinTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		118341252C61EA490001F18A /* FinTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1183413D2C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrackTests" */;
+			buildPhases = (
+				118341222C61EA490001F18A /* Sources */,
+				118341232C61EA490001F18A /* Frameworks */,
+				118341242C61EA490001F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118341282C61EA490001F18A /* PBXTargetDependency */,
+			);
+			name = FinTrackTests;
+			productName = FinTrackTests;
+			productReference = 118341262C61EA490001F18A /* FinTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1183412F2C61EA490001F18A /* FinTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 118341402C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrackUITests" */;
+			buildPhases = (
+				1183412C2C61EA490001F18A /* Sources */,
+				1183412D2C61EA490001F18A /* Frameworks */,
+				1183412E2C61EA490001F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				118341322C61EA490001F18A /* PBXTargetDependency */,
+			);
+			name = FinTrackUITests;
+			productName = FinTrackUITests;
+			productReference = 118341302C61EA490001F18A /* FinTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1183410E2C61EA470001F18A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					118341152C61EA470001F18A = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					118341252C61EA490001F18A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 118341152C61EA470001F18A;
+					};
+					1183412F2C61EA490001F18A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 118341152C61EA470001F18A;
+					};
+				};
+			};
+			buildConfigurationList = 118341112C61EA470001F18A /* Build configuration list for PBXProject "FinTrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1183410D2C61EA470001F18A;
+			productRefGroup = 118341172C61EA470001F18A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				118341152C61EA470001F18A /* FinTrack */,
+				118341252C61EA490001F18A /* FinTrackTests */,
+				1183412F2C61EA490001F18A /* FinTrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118341142C61EA470001F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118341212C61EA490001F18A /* Preview Assets.xcassets in Resources */,
+				1183411E2C61EA490001F18A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118341242C61EA490001F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1183412E2C61EA490001F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		118341122C61EA470001F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11247BA02C62504000CA8198 /* TransactionListCard.swift in Sources */,
+				11247B9A2C62383300CA8198 /* PreviewData.swift in Sources */,
+				11AADA182C62A3EA005B029C /* DebitCardView.swift in Sources */,
+				1183411C2C61EA470001F18A /* ContentView.swift in Sources */,
+				11AADA162C629115005B029C /* TransactionDetailView.swift in Sources */,
+				118341442C61EB240001F18A /* Extensions.swift in Sources */,
+				11247B9E2C624B5000CA8198 /* TransactionListViewModel.swift in Sources */,
+				11247B9C2C6238ED00CA8198 /* TransactionRow.swift in Sources */,
+				11247B982C62330A00CA8198 /* TransctionModel.swift in Sources */,
+				11AADA1A2C62A61F005B029C /* CreditCardView.swift in Sources */,
+				110651E42C64E44400BF895A /* SleepDataPoint.swift in Sources */,
+				1183411A2C61EA470001F18A /* FinTrackApp.swift in Sources */,
+				110651E22C64E25300BF895A /* BarChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		118341222C61EA490001F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1183412B2C61EA490001F18A /* FinTrackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1183412C2C61EA490001F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118341372C61EA490001F18A /* FinTrackUITestsLaunchTests.swift in Sources */,
+				118341352C61EA490001F18A /* FinTrackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		118341282C61EA490001F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118341152C61EA470001F18A /* FinTrack */;
+			targetProxy = 118341272C61EA490001F18A /* PBXContainerItemProxy */;
+		};
+		118341322C61EA490001F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 118341152C61EA470001F18A /* FinTrack */;
+			targetProxy = 118341312C61EA490001F18A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		118341382C61EA490001F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		118341392C61EA490001F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1183413B2C61EA490001F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = ASQJ436297;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1183413C2C61EA490001F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FinTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = ASQJ436297;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1183413E2C61EA490001F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQJ436297;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinTrack";
+			};
+			name = Debug;
+		};
+		1183413F2C61EA490001F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQJ436297;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FinTrack";
+			};
+			name = Release;
+		};
+		118341412C61EA490001F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQJ436297;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinTrack;
+			};
+			name = Debug;
+		};
+		118341422C61EA490001F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ASQJ436297;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tanmaydabhade.FinTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FinTrack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		118341112C61EA470001F18A /* Build configuration list for PBXProject "FinTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118341382C61EA490001F18A /* Debug */,
+				118341392C61EA490001F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1183413A2C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1183413B2C61EA490001F18A /* Debug */,
+				1183413C2C61EA490001F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1183413D2C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1183413E2C61EA490001F18A /* Debug */,
+				1183413F2C61EA490001F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		118341402C61EA490001F18A /* Build configuration list for PBXNativeTarget "FinTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				118341412C61EA490001F18A /* Debug */,
+				118341422C61EA490001F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1183410E2C61EA470001F18A /* Project object */;
+}
